@@ -123,3 +123,76 @@
     margin-bottom: 30px;
 }
 
+/* --- Stats Section --- */
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-text, .stats-grid {
+    flex: 1;
+}
+
+.stats-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-info h4 {
+    font-size: 28px;
+    color: var(--neutral-d-grey);
+}
+
+/* --- Marketing / Blog --- */
+.marketing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.blog-content {
+    background: var(--white);
+    width: 85%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: -50px; /* Faz a caixa sobrepor a imagem */
+    position: relative;
+    z-index: 2;
+}
+
+.blog-content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--neutral-grey);
+}
+
+.read-more {
+    color: var(--primary);
+    font-weight: 600;
+}
