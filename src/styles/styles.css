@@ -102,3 +102,24 @@
     margin-bottom: 10px;
 }
 
+/* --- Split Sections (Imagem + Texto) --- */
+.split-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.split-image, .split-content {
+    flex: 1;
+}
+
+.split-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.split-content p {
+    margin-bottom: 30px;
+}
+
