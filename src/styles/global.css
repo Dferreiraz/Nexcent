@@ -1,0 +1,88 @@
+/* --- Variáveis Baseadas no Design System --- */
+:root {
+    /* Cores */
+    --primary: #4CAF50; /* Verde Principal */
+    --neutral-black: #263238;
+    --neutral-d-grey: #4D4D4D;
+    --neutral-grey: #717171;
+    --neutral-l-grey: #89939E;
+    --neutral-silver: #F5F7FA;
+    --white: #FFFFFF;
+
+    /* Efeitos / Sombras */
+    --shadow-sm: 0px 2px 4px rgba(171, 190, 209, 0.2);
+    --shadow-md: 0px 8px 16px rgba(171, 190, 209, 0.4);
+
+    /* Tipografia */
+    --font-family: 'Inter', sans-serif;
+}
+
+/* --- Resets e Configurações Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--neutral-grey);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: var(--neutral-d-grey);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilitários */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-primary { color: var(--primary); }
+.text-center { text-align: center; }
+.bg-silver { background-color: var(--neutral-silver); }
+.section-padding { padding: 80px 0; }
+.shadow { box-shadow: var(--shadow-md); }
+
+/* --- Botões --- */
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #3e8e41;
+}
+
+.btn-text {
+    color: var(--primary);
+    font-weight: 500;
+    padding: 14px 28px;
+}
