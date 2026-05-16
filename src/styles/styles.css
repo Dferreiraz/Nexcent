@@ -28,3 +28,32 @@
     gap: 10px;
 }
 
+/* --- Hero Section --- */
+.hero {
+    padding: 96px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
