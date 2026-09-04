@@ -1,0 +1,28 @@
+.split-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.split-container.reversed {
+  flex-direction: row-reverse;
+}
+
+.split-image, .split-content {
+  flex: 1;
+}
+
+.split-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.split-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.split-content p {
+  margin-bottom: 30px;
+}
